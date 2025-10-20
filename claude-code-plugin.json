@@ -1,6 +1,6 @@
 {
   "name": "threejs-ecs-skills",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Claude Code skills for Three.js, Entity Component Systems, and TypeScript game development",
   "author": "Nice Wolf Studio",
   "repository": "https://github.com/Nice-Wolf-Studio/claude-skills-threejs-ecs-ts",
@@ -36,6 +36,18 @@
       "tags": ["raycasting", "interaction", "picking", "touch"]
     },
     {
+      "name": "threejs-animation-systems",
+      "path": "skills/threejs/animation-systems.md",
+      "category": "threejs",
+      "tags": ["animation", "mixer", "state-machine", "characters"]
+    },
+    {
+      "name": "threejs-model-loading",
+      "path": "skills/threejs/model-loading.md",
+      "category": "threejs",
+      "tags": ["gltf", "fbx", "loading", "draco", "compression"]
+    },
+    {
       "name": "mobile-performance",
       "path": "skills/mobile/performance.md",
       "category": "mobile",
@@ -60,6 +72,24 @@
       "tags": ["r3f", "ecs", "integration", "architecture"]
     },
     {
+      "name": "r3f-component-patterns",
+      "path": "skills/react/r3f-component-patterns.md",
+      "category": "react",
+      "tags": ["r3f", "components", "patterns", "hooks", "composition"]
+    },
+    {
+      "name": "r3f-performance",
+      "path": "skills/react/r3f-performance.md",
+      "category": "react",
+      "tags": ["r3f", "performance", "memoization", "instancing", "lod"]
+    },
+    {
+      "name": "r3f-state-management",
+      "path": "skills/react/r3f-state-management.md",
+      "category": "react",
+      "tags": ["r3f", "zustand", "state", "store", "context"]
+    },
+    {
       "name": "ecs-architecture",
       "path": "skills/ecs/architecture.md",
       "category": "ecs",
@@ -82,6 +112,12 @@
       "path": "skills/game-systems/input-system.md",
       "category": "game-systems",
       "tags": ["input", "controls", "actions", "combos"]
+    },
+    {
+      "name": "collision-system",
+      "path": "skills/game-systems/collision-system.md",
+      "category": "game-systems",
+      "tags": ["collision", "spatial", "broadphase", "physics"]
     }
   ],
   "categories": {
