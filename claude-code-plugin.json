@@ -250,6 +250,42 @@
       "path": "skills/game-systems/audio-system.md",
       "category": "game-systems",
       "tags": ["audio", "sound", "music", "spatial-audio", "web-audio"]
+    },
+    {
+      "name": "ui-system",
+      "path": "skills/game-systems/ui-system.md",
+      "category": "game-systems",
+      "tags": ["ui", "hud", "menus", "health-bars", "interface"]
+    },
+    {
+      "name": "camera-system",
+      "path": "skills/game-systems/camera-system.md",
+      "category": "game-systems",
+      "tags": ["camera", "follow", "orbit", "shake", "cinematic"]
+    },
+    {
+      "name": "spawn-system",
+      "path": "skills/game-systems/spawn-system.md",
+      "category": "game-systems",
+      "tags": ["spawning", "waves", "pooling", "respawn"]
+    },
+    {
+      "name": "health-combat-system",
+      "path": "skills/game-systems/health-combat-system.md",
+      "category": "game-systems",
+      "tags": ["health", "damage", "combat", "armor", "status-effects"]
+    },
+    {
+      "name": "inventory-system",
+      "path": "skills/game-systems/inventory-system.md",
+      "category": "game-systems",
+      "tags": ["inventory", "items", "equipment", "crafting", "stacking"]
+    },
+    {
+      "name": "level-system",
+      "path": "skills/game-systems/level-system.md",
+      "category": "game-systems",
+      "tags": ["leveling", "xp", "progression", "skills", "achievements"]
     }
   ],
   "categories": {
