@@ -1,8 +1,8 @@
 # Repository Status
 
-## Completed Skills: 27/58
+## Completed Skills: 30/58
 
-### Three.js (13/20)
+### Three.js (16/20)
 ✅ scene-setup
 ✅ geometry-management
 ✅ material-systems
@@ -16,6 +16,9 @@
 ✅ post-processing
 ✅ particles
 ✅ performance-profiling
+✅ pbr-materials
+✅ math-utilities
+✅ fog
 
 ### Mobile (2/4)
 ✅ performance
@@ -44,9 +47,9 @@
 ## Latest Additions
 
 ### Three.js Skills (3 new)
-- **post-processing**: Bloom, SSAO, DOF, custom shaders, quality presets
-- **particles**: GPU particles, emitters, pooling, effect presets (fire, smoke, rain, explosions)
-- **performance-profiling**: FPS monitoring, draw call analysis, memory profiling, bottleneck identification
+- **pbr-materials**: Metalness-roughness workflow, material variants, texture sets, presets (gold, glass, car paint)
+- **math-utilities**: Vector/quaternion operations, interpolation, easing, curves, collision helpers
+- **fog**: Linear/exponential fog, weather system, animated fog, height fog, atmospheric effects
 
 ## Key Features
 - All skills production-ready with TypeScript

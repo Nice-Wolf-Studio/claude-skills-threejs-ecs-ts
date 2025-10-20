@@ -84,6 +84,24 @@
       "tags": ["profiling", "performance", "fps", "optimization", "memory"]
     },
     {
+      "name": "threejs-pbr-materials",
+      "path": "skills/threejs/pbr-materials.md",
+      "category": "threejs",
+      "tags": ["pbr", "materials", "metalness", "roughness", "physical"]
+    },
+    {
+      "name": "threejs-math-utilities",
+      "path": "skills/threejs/math-utilities.md",
+      "category": "threejs",
+      "tags": ["math", "vector", "quaternion", "interpolation", "curves"]
+    },
+    {
+      "name": "threejs-fog",
+      "path": "skills/threejs/fog.md",
+      "category": "threejs",
+      "tags": ["fog", "atmosphere", "weather", "depth"]
+    },
+    {
       "name": "mobile-performance",
       "path": "skills/mobile/performance.md",
       "category": "mobile",
