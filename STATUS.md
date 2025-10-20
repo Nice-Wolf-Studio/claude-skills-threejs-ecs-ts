@@ -1,6 +1,6 @@
 # Repository Status
 
-## Completed Skills: 34/58
+## Completed Skills: 37/58
 
 ### Three.js (20/20) ✅ COMPLETE
 ✅ scene-setup
@@ -36,9 +36,12 @@
 ✅ r3f-state-management
 ✅ r3f-mobile-patterns
 
-### ECS (2/7)
+### ECS (5/7)
 ✅ architecture
 ✅ component-patterns
+✅ system-patterns
+✅ queries
+✅ events
 
 ### TypeScript (1/3)
 ✅ game-types
@@ -50,11 +53,10 @@
 
 ## Latest Additions
 
-### Three.js Skills (4 new) - THREE.JS NOW COMPLETE 🎉
-- **environment-maps**: HDRI/IBL, PMREMGenerator, reflection probes, dynamic reflections, skybox builder
-- **instancing-advanced**: InstancedMesh, dynamic updates, LOD instancing, frustum culling, instance pooling
-- **sprites**: Sprite materials, texture atlases, sprite animation, billboards, damage numbers
-- **best-practices**: Comprehensive guide covering optimization, resource management, debugging, production deployment
+### ECS Skills (3 new)
+- **system-patterns**: Update/reactive/interval/cleanup systems, system manager, priorities, system groups
+- **queries**: Archetype-based queries, filtered queries, spatial queries, query optimization, caching
+- **events**: Event bus, typed events, event-driven systems, priority events, entity events, event recorder
 
 ## Key Features
 - All skills production-ready with TypeScript

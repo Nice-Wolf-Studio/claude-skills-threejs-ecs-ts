@@ -186,6 +186,24 @@
       "tags": ["ecs", "components", "patterns", "pooling"]
     },
     {
+      "name": "ecs-system-patterns",
+      "path": "skills/ecs/system-patterns.md",
+      "category": "ecs",
+      "tags": ["ecs", "systems", "update", "reactive", "interval", "priorities"]
+    },
+    {
+      "name": "ecs-queries",
+      "path": "skills/ecs/queries.md",
+      "category": "ecs",
+      "tags": ["ecs", "queries", "archetype", "filtering", "spatial", "optimization"]
+    },
+    {
+      "name": "ecs-events",
+      "path": "skills/ecs/events.md",
+      "category": "ecs",
+      "tags": ["ecs", "events", "event-bus", "reactive", "messaging"]
+    },
+    {
       "name": "typescript-game-types",
       "path": "skills/typescript/game-types.md",
       "category": "typescript",
