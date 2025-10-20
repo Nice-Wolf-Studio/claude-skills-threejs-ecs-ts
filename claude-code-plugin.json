@@ -1,6 +1,6 @@
 {
   "name": "threejs-ecs-skills",
-  "version": "0.4.0",
+  "version": "1.0.0",
   "description": "Claude Code skills for Three.js, Entity Component Systems, and TypeScript game development",
   "author": "Nice Wolf Studio",
   "repository": "https://github.com/Nice-Wolf-Studio/claude-skills-threejs-ecs-ts",
@@ -138,6 +138,18 @@
       "tags": ["touch", "gestures", "joystick", "input"]
     },
     {
+      "name": "battery-optimization",
+      "path": "skills/mobile/battery-optimization.md",
+      "category": "mobile",
+      "tags": ["battery", "power", "adaptive", "throttling", "thermal"]
+    },
+    {
+      "name": "memory-management",
+      "path": "skills/mobile/memory-management.md",
+      "category": "mobile",
+      "tags": ["memory", "pooling", "disposal", "vram", "optimization"]
+    },
+    {
       "name": "react-three-fiber-setup",
       "path": "skills/react/r3f-setup.md",
       "category": "react",
@@ -220,6 +232,18 @@
       "path": "skills/typescript/game-types.md",
       "category": "typescript",
       "tags": ["typescript", "types", "safety", "patterns"]
+    },
+    {
+      "name": "typescript-performance",
+      "path": "skills/typescript/typescript-performance.md",
+      "category": "typescript",
+      "tags": ["typescript", "performance", "optimization", "compilation", "bundling"]
+    },
+    {
+      "name": "typescript-ecs-types",
+      "path": "skills/typescript/typescript-ecs-types.md",
+      "category": "typescript",
+      "tags": ["typescript", "ecs", "types", "generics", "type-safety"]
     },
     {
       "name": "input-system",
