@@ -1,6 +1,6 @@
 {
   "name": "threejs-ecs-skills",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Claude Code skills for Three.js, Entity Component Systems, and TypeScript game development",
   "author": "Nice Wolf Studio",
   "repository": "https://github.com/Nice-Wolf-Studio/claude-skills-threejs-ecs-ts",
@@ -48,6 +48,24 @@
       "tags": ["gltf", "fbx", "loading", "draco", "compression"]
     },
     {
+      "name": "threejs-camera-controls",
+      "path": "skills/threejs/camera-controls.md",
+      "category": "threejs",
+      "tags": ["camera", "controls", "orbit", "first-person", "third-person"]
+    },
+    {
+      "name": "threejs-lighting",
+      "path": "skills/threejs/lighting.md",
+      "category": "threejs",
+      "tags": ["lighting", "ambient", "directional", "point", "spot", "hemisphere"]
+    },
+    {
+      "name": "threejs-shadows",
+      "path": "skills/threejs/shadows.md",
+      "category": "threejs",
+      "tags": ["shadows", "shadow-maps", "csm", "contact-shadows"]
+    },
+    {
       "name": "mobile-performance",
       "path": "skills/mobile/performance.md",
       "category": "mobile",
@@ -88,6 +106,12 @@
       "path": "skills/react/r3f-state-management.md",
       "category": "react",
       "tags": ["r3f", "zustand", "state", "store", "context"]
+    },
+    {
+      "name": "r3f-mobile-patterns",
+      "path": "skills/react/r3f-mobile-patterns.md",
+      "category": "react",
+      "tags": ["r3f", "mobile", "touch", "responsive", "battery"]
     },
     {
       "name": "ecs-architecture",

@@ -1,26 +1,30 @@
 # Repository Status
 
-## Completed Skills: 20/58
+## Completed Skills: 24/58
 
-### Three.js (7/20)
+### Three.js (10/20)
 ✅ scene-setup
-✅ geometry-management  
+✅ geometry-management
 ✅ material-systems
 ✅ texture-management
 ✅ raycasting
 ✅ animation-systems
 ✅ model-loading
+✅ camera-controls
+✅ lighting
+✅ shadows
 
 ### Mobile (2/4)
 ✅ performance
 ✅ touch-input
 
-### React (5/6)
+### React (6/6)
 ✅ r3f-setup
 ✅ r3f-ecs-integration
 ✅ r3f-component-patterns
 ✅ r3f-performance
 ✅ r3f-state-management
+✅ r3f-mobile-patterns
 
 ### ECS (2/7)
 ✅ architecture
@@ -36,10 +40,13 @@
 
 ## Latest Additions
 
-### React Three Fiber Skills (3 new)
-- **r3f-component-patterns**: Reusable components, hooks, composition, HOCs, render props
-- **r3f-performance**: Memoization, instancing, LOD, adaptive quality, Suspense
-- **r3f-state-management**: Zustand stores, selectors, context, async actions
+### React Three Fiber Skills (1 new - COMPLETE 6/6)
+- **r3f-mobile-patterns**: Touch controls, device detection, battery optimization, responsive layouts
+
+### Three.js Skills (3 new)
+- **camera-controls**: Orbit, first-person, third-person, cinematic camera systems
+- **lighting**: Light manager, day/night cycle, light probes, dynamic light pooling
+- **shadows**: Shadow maps, CSM, contact shadows, adaptive quality
 
 ## Key Features
 - All skills production-ready with TypeScript
