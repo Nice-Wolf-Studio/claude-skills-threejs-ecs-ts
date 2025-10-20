@@ -1,29 +1,95 @@
 {
   "name": "threejs-ecs-skills",
-  "version": "0.1.0",
-  "description": "Claude Code skills for Three.js, Entity Component Systems, and TypeScript development",
+  "version": "0.2.0",
+  "description": "Claude Code skills for Three.js, Entity Component Systems, and TypeScript game development",
   "author": "Nice Wolf Studio",
   "repository": "https://github.com/Nice-Wolf-Studio/claude-skills-threejs-ecs-ts",
   "skills": [
     {
       "name": "threejs-scene-setup",
       "path": "skills/threejs/scene-setup.md",
-      "category": "threejs"
+      "category": "threejs",
+      "tags": ["setup", "renderer", "scene", "mobile"]
+    },
+    {
+      "name": "threejs-geometry-management",
+      "path": "skills/threejs/geometry-management.md",
+      "category": "threejs",
+      "tags": ["geometry", "instancing", "lod", "performance"]
+    },
+    {
+      "name": "threejs-material-systems",
+      "path": "skills/threejs/material-systems.md",
+      "category": "threejs",
+      "tags": ["materials", "shaders", "pbr", "optimization"]
+    },
+    {
+      "name": "threejs-texture-management",
+      "path": "skills/threejs/texture-management.md",
+      "category": "threejs",
+      "tags": ["textures", "compression", "atlasing", "mobile"]
+    },
+    {
+      "name": "threejs-raycasting",
+      "path": "skills/threejs/raycasting.md",
+      "category": "threejs",
+      "tags": ["raycasting", "interaction", "picking", "touch"]
+    },
+    {
+      "name": "mobile-performance",
+      "path": "skills/mobile/performance.md",
+      "category": "mobile",
+      "tags": ["optimization", "adaptive", "battery", "performance"]
+    },
+    {
+      "name": "touch-input-handling",
+      "path": "skills/mobile/touch-input.md",
+      "category": "mobile",
+      "tags": ["touch", "gestures", "joystick", "input"]
+    },
+    {
+      "name": "react-three-fiber-setup",
+      "path": "skills/react/r3f-setup.md",
+      "category": "react",
+      "tags": ["r3f", "react", "setup", "mobile"]
+    },
+    {
+      "name": "r3f-ecs-integration",
+      "path": "skills/react/r3f-ecs-integration.md",
+      "category": "react",
+      "tags": ["r3f", "ecs", "integration", "architecture"]
     },
     {
       "name": "ecs-architecture",
       "path": "skills/ecs/architecture.md",
-      "category": "ecs"
+      "category": "ecs",
+      "tags": ["ecs", "architecture", "components", "systems"]
+    },
+    {
+      "name": "ecs-component-patterns",
+      "path": "skills/ecs/component-patterns.md",
+      "category": "ecs",
+      "tags": ["ecs", "components", "patterns", "pooling"]
     },
     {
       "name": "typescript-game-types",
       "path": "skills/typescript/game-types.md",
-      "category": "typescript"
+      "category": "typescript",
+      "tags": ["typescript", "types", "safety", "patterns"]
+    },
+    {
+      "name": "input-system",
+      "path": "skills/game-systems/input-system.md",
+      "category": "game-systems",
+      "tags": ["input", "controls", "actions", "combos"]
     }
   ],
   "categories": {
-    "threejs": "Three.js development patterns and best practices",
+    "threejs": "Three.js development patterns and optimization",
     "ecs": "Entity Component System architecture and implementation",
-    "typescript": "Type-safe game development with TypeScript"
+    "typescript": "Type-safe game development with TypeScript",
+    "mobile": "Mobile optimization and touch controls",
+    "react": "React Three Fiber integration patterns",
+    "game-systems": "Game-specific systems and mechanics"
   }
 }
