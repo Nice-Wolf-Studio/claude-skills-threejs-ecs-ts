@@ -1,6 +1,6 @@
 # Repository Status
 
-## Completed Skills: 39/58
+## Completed Skills: 42/58
 
 ### Three.js (20/20) ✅ COMPLETE
 ✅ scene-setup
@@ -48,16 +48,20 @@
 ### TypeScript (1/3)
 ✅ game-types
 
-### Game Systems (3/12)
+### Game Systems (6/12)
 ✅ input-system
 ✅ collision-system
+✅ physics-system
+✅ ai-system
+✅ audio-system
 ✅ (scene-setup counted in Three.js)
 
 ## Latest Additions
 
-### ECS Skills (2 new) - ECS NOW COMPLETE 🎉
-- **serialization**: Save/load systems, component serialization, entity prefabs, network sync, versioning
-- **performance**: Archetype optimization, component/entity pooling, packed arrays, system profiling, batch processing
+### Game Systems Skills (3 new)
+- **physics-system**: Rigid body dynamics, Cannon.js integration, character controller, vehicle physics, forces
+- **ai-system**: Finite state machines, behavior trees, steering behaviors, perception, decision making
+- **audio-system**: Web Audio API, spatial 3D audio, music manager, audio pooling, event-driven sounds
 
 ## Key Features
 - All skills production-ready with TypeScript

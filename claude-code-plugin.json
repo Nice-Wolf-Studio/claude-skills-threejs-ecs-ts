@@ -232,6 +232,24 @@
       "path": "skills/game-systems/collision-system.md",
       "category": "game-systems",
       "tags": ["collision", "spatial", "broadphase", "physics"]
+    },
+    {
+      "name": "physics-system",
+      "path": "skills/game-systems/physics-system.md",
+      "category": "game-systems",
+      "tags": ["physics", "rigid-body", "cannon", "forces", "dynamics"]
+    },
+    {
+      "name": "ai-system",
+      "path": "skills/game-systems/ai-system.md",
+      "category": "game-systems",
+      "tags": ["ai", "fsm", "behavior-tree", "steering", "pathfinding"]
+    },
+    {
+      "name": "audio-system",
+      "path": "skills/game-systems/audio-system.md",
+      "category": "game-systems",
+      "tags": ["audio", "sound", "music", "spatial-audio", "web-audio"]
     }
   ],
   "categories": {
