@@ -1,6 +1,6 @@
 # Repository Status
 
-## Completed Skills: 37/58
+## Completed Skills: 39/58
 
 ### Three.js (20/20) ✅ COMPLETE
 ✅ scene-setup
@@ -36,12 +36,14 @@
 ✅ r3f-state-management
 ✅ r3f-mobile-patterns
 
-### ECS (5/7)
+### ECS (7/7) ✅ COMPLETE
 ✅ architecture
 ✅ component-patterns
 ✅ system-patterns
 ✅ queries
 ✅ events
+✅ serialization
+✅ performance
 
 ### TypeScript (1/3)
 ✅ game-types
@@ -53,10 +55,9 @@
 
 ## Latest Additions
 
-### ECS Skills (3 new)
-- **system-patterns**: Update/reactive/interval/cleanup systems, system manager, priorities, system groups
-- **queries**: Archetype-based queries, filtered queries, spatial queries, query optimization, caching
-- **events**: Event bus, typed events, event-driven systems, priority events, entity events, event recorder
+### ECS Skills (2 new) - ECS NOW COMPLETE 🎉
+- **serialization**: Save/load systems, component serialization, entity prefabs, network sync, versioning
+- **performance**: Archetype optimization, component/entity pooling, packed arrays, system profiling, batch processing
 
 ## Key Features
 - All skills production-ready with TypeScript

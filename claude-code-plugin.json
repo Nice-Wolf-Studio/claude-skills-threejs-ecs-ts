@@ -204,6 +204,18 @@
       "tags": ["ecs", "events", "event-bus", "reactive", "messaging"]
     },
     {
+      "name": "ecs-serialization",
+      "path": "skills/ecs/serialization.md",
+      "category": "ecs",
+      "tags": ["ecs", "serialization", "save-load", "prefabs", "network"]
+    },
+    {
+      "name": "ecs-performance",
+      "path": "skills/ecs/performance.md",
+      "category": "ecs",
+      "tags": ["ecs", "performance", "optimization", "pooling", "profiling"]
+    },
+    {
       "name": "typescript-game-types",
       "path": "skills/typescript/game-types.md",
       "category": "typescript",
