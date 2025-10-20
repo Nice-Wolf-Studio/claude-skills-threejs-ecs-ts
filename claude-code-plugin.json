@@ -1,0 +1,29 @@
+{
+  "name": "threejs-ecs-skills",
+  "version": "0.1.0",
+  "description": "Claude Code skills for Three.js, Entity Component Systems, and TypeScript development",
+  "author": "Nice Wolf Studio",
+  "repository": "https://github.com/Nice-Wolf-Studio/claude-skills-threejs-ecs-ts",
+  "skills": [
+    {
+      "name": "threejs-scene-setup",
+      "path": "skills/threejs/scene-setup.md",
+      "category": "threejs"
+    },
+    {
+      "name": "ecs-architecture",
+      "path": "skills/ecs/architecture.md",
+      "category": "ecs"
+    },
+    {
+      "name": "typescript-game-types",
+      "path": "skills/typescript/game-types.md",
+      "category": "typescript"
+    }
+  ],
+  "categories": {
+    "threejs": "Three.js development patterns and best practices",
+    "ecs": "Entity Component System architecture and implementation",
+    "typescript": "Type-safe game development with TypeScript"
+  }
+}
