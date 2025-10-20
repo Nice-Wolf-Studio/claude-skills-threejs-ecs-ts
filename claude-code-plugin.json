@@ -66,6 +66,24 @@
       "tags": ["shadows", "shadow-maps", "csm", "contact-shadows"]
     },
     {
+      "name": "threejs-post-processing",
+      "path": "skills/threejs/post-processing.md",
+      "category": "threejs",
+      "tags": ["post-processing", "bloom", "ssao", "dof", "effects"]
+    },
+    {
+      "name": "threejs-particles",
+      "path": "skills/threejs/particles.md",
+      "category": "threejs",
+      "tags": ["particles", "gpu-particles", "emitters", "effects"]
+    },
+    {
+      "name": "threejs-performance-profiling",
+      "path": "skills/threejs/performance-profiling.md",
+      "category": "threejs",
+      "tags": ["profiling", "performance", "fps", "optimization", "memory"]
+    },
+    {
       "name": "mobile-performance",
       "path": "skills/mobile/performance.md",
       "category": "mobile",

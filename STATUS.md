@@ -1,8 +1,8 @@
 # Repository Status
 
-## Completed Skills: 24/58
+## Completed Skills: 27/58
 
-### Three.js (10/20)
+### Three.js (13/20)
 ✅ scene-setup
 ✅ geometry-management
 ✅ material-systems
@@ -13,6 +13,9 @@
 ✅ camera-controls
 ✅ lighting
 ✅ shadows
+✅ post-processing
+✅ particles
+✅ performance-profiling
 
 ### Mobile (2/4)
 ✅ performance
@@ -40,13 +43,10 @@
 
 ## Latest Additions
 
-### React Three Fiber Skills (1 new - COMPLETE 6/6)
-- **r3f-mobile-patterns**: Touch controls, device detection, battery optimization, responsive layouts
-
 ### Three.js Skills (3 new)
-- **camera-controls**: Orbit, first-person, third-person, cinematic camera systems
-- **lighting**: Light manager, day/night cycle, light probes, dynamic light pooling
-- **shadows**: Shadow maps, CSM, contact shadows, adaptive quality
+- **post-processing**: Bloom, SSAO, DOF, custom shaders, quality presets
+- **particles**: GPU particles, emitters, pooling, effect presets (fire, smoke, rain, explosions)
+- **performance-profiling**: FPS monitoring, draw call analysis, memory profiling, bottleneck identification
 
 ## Key Features
 - All skills production-ready with TypeScript
