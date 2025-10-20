@@ -1,8 +1,8 @@
 # Repository Status
 
-## Completed Skills: 30/58
+## Completed Skills: 34/58
 
-### Three.js (16/20)
+### Three.js (20/20) ✅ COMPLETE
 ✅ scene-setup
 ✅ geometry-management
 ✅ material-systems
@@ -19,6 +19,10 @@
 ✅ pbr-materials
 ✅ math-utilities
 ✅ fog
+✅ environment-maps
+✅ instancing-advanced
+✅ sprites
+✅ best-practices
 
 ### Mobile (2/4)
 ✅ performance
@@ -46,10 +50,11 @@
 
 ## Latest Additions
 
-### Three.js Skills (3 new)
-- **pbr-materials**: Metalness-roughness workflow, material variants, texture sets, presets (gold, glass, car paint)
-- **math-utilities**: Vector/quaternion operations, interpolation, easing, curves, collision helpers
-- **fog**: Linear/exponential fog, weather system, animated fog, height fog, atmospheric effects
+### Three.js Skills (4 new) - THREE.JS NOW COMPLETE 🎉
+- **environment-maps**: HDRI/IBL, PMREMGenerator, reflection probes, dynamic reflections, skybox builder
+- **instancing-advanced**: InstancedMesh, dynamic updates, LOD instancing, frustum culling, instance pooling
+- **sprites**: Sprite materials, texture atlases, sprite animation, billboards, damage numbers
+- **best-practices**: Comprehensive guide covering optimization, resource management, debugging, production deployment
 
 ## Key Features
 - All skills production-ready with TypeScript
@@ -59,11 +64,9 @@
 - TodoWrite-compatible checklists
 
 ## Next Priority
-- physics-system
-- camera-system
-- spawn-system  
-- health-combat-system
-- ai-system
-- More Three.js skills (13 remaining)
+- ECS skills (5 remaining): system-patterns, queries, events, serialization, performance
+- Game systems (9 remaining): physics, AI, audio, UI, camera, spawn, health-combat, inventory, level
+- TypeScript (2 remaining): performance, ecs-types
+- Mobile (2 remaining): battery-optimization, memory-management
 
 ## Total Planned: 58 Skills
