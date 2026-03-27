@@ -638,9 +638,26 @@ function animate() {
 - Limit to 1-2 shadow-casting lights
 - Consider disabling shadows entirely on low-end devices
 
+## r183 Migration Notes
+
+### shadowMap.color Renamed to shadowMap.transmitted (WebGPU)
+
+In r183, when using the WebGPU renderer, `shadowMap.color` has been renamed to `shadowMap.transmitted`. If you access shadow map color properties for transmission/translucent shadow effects in WebGPU, update your code:
+
+```typescript
+// ❌ Deprecated in r183 (WebGPU)
+// renderer.shadowMap.color
+
+// ✅ r183+ (WebGPU)
+// renderer.shadowMap.transmitted
+```
+
+This change only affects WebGPU renderer usage. WebGL shadow maps are unaffected.
+
 ## Related Skills
 
 - `threejs-lighting` - Light setup
 - `threejs-scene-setup` - Renderer configuration
 - `mobile-performance` - Mobile optimization
 - `threejs-material-systems` - Material shadow response
+- `r183-migration` - Three.js r183 migration guide

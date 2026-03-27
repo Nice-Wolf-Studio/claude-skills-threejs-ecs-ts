@@ -533,9 +533,35 @@ MobileModelOptimizer.optimize(model, tier);
 - Keep poly count under 50K on mobile
 - Limit texture size to 1024x1024 on mobile
 
+## r183 Migration Notes
+
+### GLTFLoader — KHR_meshopt_compression Support
+
+As of r183, `GLTFLoader` natively supports the `KHR_meshopt_compression` extension. MeshOpt compression is an alternative to Draco that offers faster decompression and better streaming support:
+
+```typescript
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import { MeshoptDecoder } from 'three/examples/jsm/libs/meshopt_decoder.module.js';
+
+const loader = new GLTFLoader();
+loader.setMeshoptDecoder(MeshoptDecoder);
+
+// Now loads .glb/.gltf files using KHR_meshopt_compression automatically
+const gltf = await loader.loadAsync('/models/compressed.glb');
+```
+
+MeshOpt vs Draco:
+- **MeshOpt**: Faster decode, better for streaming, smaller WASM decoder
+- **Draco**: Better compression ratio, widely supported
+
+### VRMLLoader — Camera Support
+
+r183 adds camera support to `VRMLLoader`. VRML files containing camera definitions will now have their cameras properly imported into the loaded scene.
+
 ## Related Skills
 
 - `threejs-animation-systems` - Animating loaded models
 - `threejs-texture-management` - Texture optimization
 - `asset-bundling` - Asset loading strategies
 - `mobile-performance` - Mobile optimization
+- `r183-migration` - Three.js r183 migration guide

@@ -625,9 +625,33 @@ function animate() {
 - Implement frustum culling with camera frustum
 - Profile camera updates in performance-critical sections
 
+## r183 Migration Notes
+
+### OrbitControls — New Programmatic Methods
+
+As of r183, the built-in `OrbitControls` now exposes `pan()`, `rotate()`, and `dolly()` methods for programmatic camera manipulation:
+
+```typescript
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+const controls = new OrbitControls(camera, renderer.domElement);
+
+// Programmatic control (r183+)
+controls.rotate(Math.PI / 4, 0);    // Rotate by angle (azimuth, polar)
+controls.pan(5, 0);                  // Pan by pixels or world units
+controls.dolly(0.5);                 // Dolly in/out (zoom factor)
+```
+
+The `cursorStyle` property is also now available to customize the cursor during different interaction states.
+
+### Camera Scale Excluded from View Matrix
+
+Starting in r183, camera scale is excluded from the view matrix calculation. If your code relies on scaling the camera object to achieve zoom or other effects, this will no longer work as expected. Use the camera's projection parameters (FOV, zoom property) or OrbitControls' dolly method instead.
+
 ## Related Skills
 
 - `threejs-scene-setup` - Scene initialization
 - `r3f-setup` - React Three Fiber camera setup
 - `input-system` - Input handling
 - `touch-input-handling` - Touch controls
+- `r183-migration` - Three.js r183 migration guide

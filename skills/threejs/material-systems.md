@@ -553,9 +553,32 @@ materialPool.dispose();
 - Set `depthTest: true` and `depthWrite: true` for opaque objects
 - Use `InstancedMesh` with `instanceColor` for color variations
 
+## r183 Migration Notes
+
+### Lambert and Phong — scene.environment IBL Support
+
+As of r183, `MeshLambertMaterial` and `MeshPhongMaterial` now support `scene.environment` for image-based lighting (IBL). Previously only `MeshStandardMaterial` and `MeshPhysicalMaterial` responded to environment maps set via `scene.environment`. This means mobile-optimized Lambert/Phong materials can now benefit from environment lighting without switching to heavier PBR materials:
+
+```typescript
+// r183+: Lambert and Phong now respond to scene.environment
+scene.environment = envMap; // HDR environment map
+
+const mobileMaterial = new THREE.MeshLambertMaterial({ color: 0x00ff00 });
+// This material will now pick up IBL from scene.environment
+```
+
+### MeshPhysicalMaterial — Clearcoat for Rectangular Area Lights
+
+r183 adds clearcoat support for rectangular area lights on `MeshPhysicalMaterial`. If you use area lights with clearcoat materials, the clearcoat layer now correctly reflects rectangular area light sources.
+
+### Line2NodeMaterial — useColor Renamed
+
+If using `Line2NodeMaterial` (WebGPU), the `useColor` property has been renamed to `vertexColors` in r183.
+
 ## Related Skills
 
 - `threejs-texture-management` - Texture loading and optimization
 - `threejs-shader-development` - Advanced shader techniques
 - `mobile-performance` - Mobile-specific optimizations
 - `threejs-scene-setup` - Scene and rendering setup
+- `r183-migration` - Three.js r183 migration guide
