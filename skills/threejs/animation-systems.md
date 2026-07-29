@@ -556,9 +556,39 @@ animManager.update(deltaTime);
 - Consider animation LOD (simpler animations at distance)
 - Use `mixer.stopAllAction()` when model is far away
 
+## r183 Migration Notes
+
+### Clock Deprecated — Use Timer
+
+As of r183, `THREE.Clock` is deprecated for frame timing. Use `THREE.Timer` instead:
+
+```typescript
+import { Timer } from 'three/addons/misc/Timer.js';
+
+const timer = new Timer();
+
+function animate() {
+  timer.update();
+  const deltaTime = timer.getDelta();
+
+  // Update animation mixers with Timer delta
+  animationManager.update(deltaTime);
+}
+```
+
+### BezierInterpolant for Smooth Curves
+
+r183 introduces `BezierInterpolant` for smooth Bezier curve interpolation in animation keyframes. This provides smoother animation curves compared to linear or cubic interpolation when working with `KeyframeTrack`:
+
+```typescript
+// BezierInterpolant can be used for custom interpolation on keyframe tracks
+// Useful for animations that need precise easing control via Bezier handles
+```
+
 ## Related Skills
 
 - `threejs-model-loading` - Loading animated models
 - `threejs-skeletal-animation` - Advanced bone animation
 - `ecs-component-patterns` - Animation components
 - `camera-system` - Syncing camera with animations
+- `r183-migration` - Three.js r183 migration guide

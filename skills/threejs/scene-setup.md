@@ -239,8 +239,40 @@ window.addEventListener('beforeunload', () => {
 - Use `PCFSoftShadowMap` for quality/performance balance
 - Track and dispose all Three.js objects to prevent memory leaks
 
+## r183 Migration Notes
+
+### Clock Deprecated — Use Timer
+
+As of Three.js r183, `THREE.Clock` is deprecated. Use `THREE.Timer` instead for frame timing:
+
+```typescript
+// ❌ Deprecated (r183+)
+const clock = new THREE.Clock();
+function animate() {
+  const delta = clock.getDelta();
+}
+
+// ✅ Use Timer instead
+import { Timer } from 'three/addons/misc/Timer.js';
+
+const timer = new Timer();
+function animate() {
+  timer.update();
+  const delta = timer.getDelta();
+  const elapsed = timer.getElapsed();
+}
+```
+
+Key differences:
+- `Timer` requires explicit `timer.update()` call each frame
+- Use `timer.getDelta()` and `timer.getElapsed()` after calling `update()`
+- `Timer` is not affected by page visibility changes (no time spike when tab regains focus)
+
+See `r183-migration` skill for complete migration guide.
+
 ## Related Skills
 
 - `threejs-optimization` - Advanced performance optimization
 - `threejs-lighting` - Advanced lighting setups
 - `typescript-game-types` - Type-safe patterns for game objects
+- `r183-migration` - Three.js r183 migration guide

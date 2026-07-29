@@ -675,6 +675,14 @@ if (hit.hit) {
 - `ecs-component-patterns` - Using math in ECS
 - `threejs-animation-systems` - Animation with math
 
+## r183 Migration Notes
+
+### Matrix4 Performance Improvements
+
+r183 optimizes `Matrix4.decompose()` with determinant caching and improves `Matrix4.invert()` performance. If you frequently decompose matrices (e.g., extracting position/rotation/scale from instance matrices in `InstancedMesh`), you may see measurable performance improvements after upgrading.
+
+No API changes required — these are internal optimizations that apply automatically.
+
 ## References
 
 - Three.js Math: https://threejs.org/docs/#api/en/math/Math

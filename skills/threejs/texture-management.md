@@ -486,9 +486,18 @@ textureManager.disposeAll();
 - Pool and reuse textures where possible
 - Use `texture.anisotropy = 0` on mobile
 
+## r183 Migration Notes
+
+### KTX2Loader Improvements
+
+r183 includes fixes for BC3 alpha handling in `KTX2Loader` and adds support for ISO 21496-1 gainmap metadata. If you previously saw alpha transparency issues with BC3-compressed KTX2 textures, upgrading to r183 should resolve them.
+
+Gainmap metadata support enables HDR-like rendering from SDR+gainmap KTX2 files, which can reduce file sizes compared to full HDR textures while preserving dynamic range information.
+
 ## Related Skills
 
 - `threejs-material-systems` - Material setup and optimization
 - `mobile-performance` - Mobile-specific optimization
 - `threejs-model-loading` - Loading models with textures
 - `asset-bundling` - Asset loading strategies
+- `r183-migration` - Three.js r183 migration guide

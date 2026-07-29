@@ -2,7 +2,7 @@
 
 ## 🎉 ALL SKILLS COMPLETE: 58/58 🎉
 
-### Three.js (20/20) ✅ COMPLETE
+### Three.js (21/21) ✅ COMPLETE (updated for r183)
 ✅ scene-setup
 ✅ geometry-management
 ✅ material-systems
@@ -23,6 +23,7 @@
 ✅ instancing-advanced
 ✅ sprites
 ✅ best-practices
+✅ r183-migration
 
 ### Mobile (4/4) ✅ COMPLETE
 ✅ performance
@@ -76,8 +77,19 @@
 - **battery-optimization**: Power state management, adaptive quality, frame rate throttling, thermal management
 - **memory-management**: Resource disposal, object pooling, texture management, memory monitoring
 
+## r183 Update (2026-03-27)
+
+All Three.js skills updated with r183 migration notes. New `r183-migration` skill added as a dedicated migration guide. Key changes documented:
+- Clock deprecated in favor of Timer
+- BatchedMesh per-instance opacity and wireframe
+- OrbitControls programmatic methods (pan/rotate/dolly)
+- Lambert/Phong scene.environment IBL support
+- GLTFLoader meshopt compression
+- Matrix4 performance optimizations
+- WebGPU shadow map and TSL changes
+
 ## Key Features
-- All 58 skills production-ready with TypeScript
+- All 59 skills production-ready with TypeScript
 - Complete code examples with full implementations
 - Mobile optimization throughout
 - Performance tips and best practices
@@ -85,11 +97,11 @@
 - Cross-referenced related skills
 
 ## Repository Complete
-✅ Three.js: 20/20 skills
+✅ Three.js: 21/21 skills (r183 updated)
 ✅ React: 6/6 skills
 ✅ ECS: 7/7 skills
 ✅ Game Systems: 12/12 skills
 ✅ TypeScript: 3/3 skills
 ✅ Mobile: 4/4 skills
 
-🎉 **Total: 58/58 Skills - 100% Complete!** 🎉
+**Total: 59/59 Skills - 100% Complete (r183 updated)**

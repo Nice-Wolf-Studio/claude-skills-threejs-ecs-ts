@@ -631,8 +631,38 @@ function animate() {
 - `mobile-performance` - Mobile optimization
 - `threejs-particles` - Particle instancing
 
+## r183 Migration Notes
+
+### BatchedMesh — Per-Instance Opacity and Wireframe
+
+As of r183, `BatchedMesh` now supports per-instance opacity and wireframe rendering. This enables more flexible rendering without splitting into separate draw calls:
+
+```typescript
+import * as THREE from 'three';
+
+const batchedMesh = new THREE.BatchedMesh(maxGeometryCount, maxVertexCount, maxIndexCount);
+
+// Add geometries
+const geoId1 = batchedMesh.addGeometry(boxGeometry);
+const geoId2 = batchedMesh.addGeometry(sphereGeometry);
+
+// Add instances
+const inst1 = batchedMesh.addInstance(geoId1);
+const inst2 = batchedMesh.addInstance(geoId2);
+
+// r183+: Per-instance opacity
+batchedMesh.setColorAt(inst1, new THREE.Color(1, 0, 0));
+batchedMesh.setVisibleAt(inst1, true);
+
+// Per-instance wireframe and opacity are now supported,
+// allowing mixed solid/wireframe rendering in a single draw call
+```
+
+`BatchedMesh` is the recommended approach for rendering many different geometries efficiently (vs `InstancedMesh` which requires identical geometry). The r183 opacity/wireframe additions make it viable for more use cases like debug visualization, fade-in effects, and mixed rendering styles.
+
 ## References
 
 - Three.js InstancedMesh: https://threejs.org/docs/#api/en/objects/InstancedMesh
+- Three.js BatchedMesh: https://threejs.org/docs/#api/en/objects/BatchedMesh
 - Instancing Examples: https://threejs.org/examples/?q=instance
 - GPU Instancing: https://webgl2fundamentals.org/webgl/lessons/webgl-instanced-drawing.html

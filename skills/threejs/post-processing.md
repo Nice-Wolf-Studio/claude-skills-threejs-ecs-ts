@@ -662,9 +662,18 @@ ppManager.composer.addPass(dofPass);
 7. SSAO (very expensive)
 8. SSR (very expensive)
 
+## r183 Migration Notes
+
+### Scriptable Node Removed from TSL
+
+As of r183, the `Scriptable` node has been removed from TSL (Three.js Shading Language). If you were using `Scriptable` nodes for custom post-processing in the WebGPU renderer's node-based pipeline, you will need to refactor to use standard TSL node functions (`Fn`, `tslFn`) instead.
+
+See the `webgpu-threejs-tsl` skill and `r183-migration` skill for TSL alternatives.
+
 ## Related Skills
 
 - `threejs-scene-setup` - Renderer setup
 - `mobile-performance` - Mobile optimization
 - `r3f-performance` - React optimization
 - `threejs-shadows` - Shadow effects
+- `r183-migration` - Three.js r183 migration guide

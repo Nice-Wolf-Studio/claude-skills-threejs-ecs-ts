@@ -113,14 +113,17 @@ const box2 = new THREE.Mesh(new THREE.BoxGeometry(1, 1, 1), material2);
 
 ```typescript
 // ✅ Good: Fixed timestep for physics, variable for rendering
+// NOTE: As of r183, use Timer instead of Clock (Clock is deprecated)
+import { Timer } from 'three/addons/misc/Timer.js';
+
 class GameLoop {
-  private lastTime = 0;
+  private timer = new Timer();
   private accumulator = 0;
   private readonly fixedDeltaTime = 1 / 60; // 60 FPS physics
 
-  update(currentTime: number): void {
-    const deltaTime = Math.min((currentTime - this.lastTime) / 1000, 0.1);
-    this.lastTime = currentTime;
+  update(): void {
+    this.timer.update();
+    const deltaTime = Math.min(this.timer.getDelta(), 0.1);
 
     this.accumulator += deltaTime;
 
@@ -143,10 +146,10 @@ class GameLoop {
   }
 }
 
-// ❌ Bad: Inconsistent timesteps
+// ❌ Bad: Using deprecated Clock (r183+)
 function animate() {
-  const deltaTime = clock.getDelta(); // Varies wildly
-  updatePhysics(deltaTime); // Physics becomes unstable
+  const deltaTime = clock.getDelta(); // Deprecated — use Timer instead
+  updatePhysics(deltaTime); // Physics becomes unstable with variable timesteps
   renderer.render(scene, camera);
 }
 ```
@@ -510,6 +513,15 @@ console.timeEnd('updatePhysics');
 - `mobile-performance` - Mobile-specific optimization
 - `ecs-architecture` - Architecture patterns
 - `typescript-game-types` - Type safety
+
+## r183 Migration Notes
+
+See the dedicated `r183-migration` skill for the complete migration guide. Key best practice changes:
+
+- **Use Timer over Clock**: `THREE.Clock` is deprecated in r183. Always use `Timer` from addons for frame timing.
+- **scene.environment for mobile**: Lambert/Phong now support IBL, making environment maps viable on mobile without switching to Standard material.
+- **BatchedMesh for mixed geometry**: With per-instance opacity and wireframe support, `BatchedMesh` is now viable for more use cases.
+- **MeshOpt compression**: Consider MeshOpt as an alternative to Draco for faster decompression.
 
 ## References
 
